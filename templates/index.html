@@ -17,7 +17,7 @@
         <div class="container">
             <form method="POST" action="/result">
                 <div class="form-group">
-                    <label for="height">HEIGHT</label>
+                    <label for="height">HEIGHT IN METER</label>
                     <input
                         type="text"
                         class="form-control"
@@ -27,7 +27,7 @@
                     />
                 </div>
                 <div class="form-group">
-                    <label for="Weight">WEIGHT</label>
+                    <label for="Weight">WEIGHT IN KILO GRAMS</label>
                     <input
                         type="text"
                         class="form-control"
@@ -40,16 +40,67 @@
             </form>
         </div>
         <div style="margin-top: 50px; text-align: center">
-            <h3>BMI IS: {{BMI}}</h3>
+            <h3 style="font-weight: bold">BMI IS: {{BMI}}</h3>
         </div>
-        <div class="container">
-            <button type="button" class="btn btn-dark" onclick="window.location.href='/';">
+        <div class="container" style="display: flex; justify-content: flex-end">
+            <button type="button" class="btn btn-sm btn-dark" onclick="window.location.href='/';">
                 NEW
             </button>
         </div>
 
-        <div>
-
+        <div class="container" style="margin-top: 80px; margin-bottom: 20px">
+            <p style="text-align: center">
+                Body Mass Index (BMI) is a person’s weight in kilograms divided by the square of
+                height in meters. A high BMI can indicate high body fatness. BMI screens for weight
+                categories that may lead to health problems, but it does not diagnose the body
+                fatness or health of an individual.
+            </p>
+            <h3
+                style="
+                    margin-top: 50px;
+                    margin-bottom: 10px;
+                    text-align: center;
+                    text-decoration: underline;
+                "
+            >
+                BODY MASS INDEX REFERENCE TABLE
+            </h3>
+            <table class="table">
+                <thead>
+                    <tr style="text-decoration: underline">
+                        <th scope="col">#</th>
+                        <th scope="col">Category</th>
+                        <th scope="col">BMI</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <th>Underweight</th>
+                        <th>&lt18.5</th>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <th>Normal Weight</th>
+                        <th>&lt18.5 - 24.9</th>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <th>Class 1 Obesity: Overweight</th>
+                        <th>&lt25 - 29.9</th>
+                    </tr>
+                    <tr>
+                        <th scope="row">4</th>
+                        <th>Class 2 Obesity</th>
+                        <th>&lt30 - 39.9</th>
+                    </tr>
+                    <tr>
+                        <th scope="row">5</th>
+                        <th>Class 3 Obesity</th>
+                        <th>&gt40</th>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </body>
 
