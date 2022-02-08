@@ -13,7 +13,16 @@
         <title>BMI Calculator</title>
     </head>
     <body>
-        <h1 style="margin-top: 50px; margin-bottom: 10px; text-align: center">BMI CALCULATOR</h1>
+        <h1
+            style="
+                margin-top: 50px;
+                margin-bottom: 10px;
+                text-align: center;
+                text-decoration: underline;
+            "
+        >
+            BODY MASS INDEX CALCULATOR
+        </h1>
         <div class="container">
             <form method="POST" action="/result">
                 <div class="form-group">
@@ -40,7 +49,7 @@
             </form>
         </div>
         <div style="margin-top: 50px; text-align: center">
-            <h3 style="font-weight: bold">BMI IS: {{BMI}}</h3>
+            <h3 style="font-weight: bold">BMI :- {{BMI}}</h3>
         </div>
         <div class="container" style="display: flex; justify-content: flex-end">
             <button type="button" class="btn btn-sm btn-dark" onclick="window.location.href='/';">
