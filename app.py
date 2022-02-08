@@ -19,7 +19,7 @@ def result():
             height = 0
         if weight == None:
             weight = 1
-    BMI = ((int(height)**2)/int(weight))
+    BMI = int(weight)/(int(height)**2)
     return render_template('index.html', BMI=BMI)
 
 
